@@ -8,6 +8,7 @@
   <name>dubbo-api</name>
   <modules>
     <module>sequence-api</module>
+    <module>dubbo-pjrp-api</module>
   </modules>
   <distributionManagement>
         <repository>
