@@ -54,4 +54,34 @@ public interface IPjrpService {
 	 * @return 文件osskey
 	 */
 	public String exportOverdueCollection(String time);
+	/**
+	 * 查询台账(财务部 fdept：financial department)
+	 * @param time
+	 * @param pageNum
+	 * @param pageSize
+	 * @return
+	 */
+	public PageVo selectLedgerOfFdept(String time,String pageNum,String pageSize);
+	/**
+	 * 导出台账(财务部 )
+	 * @param time
+	 * @return
+	 */
+	public String exportLedgerOfFdept(String time);
+	
+	
+	/**
+	 * 查询入账记录(财务部 fdept：financial department)
+	 * @param time
+	 * @param pageNum
+	 * @param pageSize
+	 * @return
+	 */
+	public PageVo selectRecordLogOfFdept(String time,String pageNum,String pageSize);
+	/**
+	 * 导出入账记录(财务部 )
+	 * @param time
+	 * @return
+	 */
+	public String exportRecordLogOfFdept(String time);
 }
