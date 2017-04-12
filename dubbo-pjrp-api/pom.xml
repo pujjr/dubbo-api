@@ -9,7 +9,6 @@
   </parent>
   <groupId>com.pujjr</groupId>
   <artifactId>dubbo-pjrp-api</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>dubbo-pjrp-api</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -24,16 +23,5 @@
     </dependency>
   </dependencies>
   
-  <distributionManagement>
-  	<repository>
-  		<id>releases</id>
-  		<name>releases</name>
-  		<url>http://172.18.10.72:8081/nexus/content/repositories/releases/</url>
-  	</repository>
-  	<snapshotRepository>
-  		<id>snapshots</id>
-  		<name>snapshots</name>
-  		<url>http://172.18.10.72:8081/nexus/content/repositories/snapshots/</url>
-  	</snapshotRepository>
-  </distributionManagement>
+  <version>1.0.0.RELEASE</version>
 </project>
