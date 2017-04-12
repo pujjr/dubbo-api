@@ -84,4 +84,38 @@ public interface IPjrpService {
 	 * @return
 	 */
 	public String exportRecordLogOfFdept(String time);
+	
+	/**
+	 * 查询进度表
+	 * @param timeBegin
+	 * @param timeEnd
+	 * @param pageNum
+	 * @param pageSize
+	 * @return
+	 */
+	public PageVo selectProgress(String timeBegin, String timeEnd,String pageNum,String pageSize);
+
+	/**
+	 * 导出进度表
+	 * @param timeBegin
+	 * @param timeEnd
+	 * @return
+	 */
+	public String exportProgress(String timeBegin, String timeEnd);
+	
+	/**
+	 * 查询月放款数据
+	 * @param time
+	 * @param pageNum
+	 * @param pageSize
+	 * @return
+	 */
+	public PageVo selectMonthLoanData(String time,String pageNum,String pageSize);
+
+	/**
+	 * 导出月放款数据
+	 * @param time
+	 * @return
+	 */
+	public String exportMonthLoanData(String time);
 }
