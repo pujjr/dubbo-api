@@ -118,4 +118,20 @@ public interface IPjrpService {
 	 * @return
 	 */
 	public String exportMonthLoanData(String time);
+	
+	/**
+	 * 查询风险管理部台账
+	 * @param time
+	 * @param pageNum
+	 * @param pageSize
+	 * @return
+	 */
+	public PageVo selectLedgerOfRiskDept(String time,String pageNum,String pageSize);
+
+	/**
+	 * 导出风险管理部台账
+	 * @param time
+	 * @return
+	 */
+	public String exportLedgerOfRiskDept(String time);
 }
