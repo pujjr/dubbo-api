@@ -134,4 +134,36 @@ public interface IPjrpService {
 	 * @return
 	 */
 	public String exportLedgerOfRiskDept(String time);
+	
+	/**
+	 * 经销商产品数据分类统计(查询)
+	 * @param time
+	 * @param pageNum
+	 * @param pageSize
+	 * @return
+	 */
+	public PageVo selectBranchProductSortCountData(String time,String pageNum,String pageSize);
+
+	/**
+	 * 经销商产品数据分类统计(导出)
+	 * @param time
+	 * @return
+	 */
+	public String exportBranchProductSortCountData(String time);
+
+	/**
+	 * 经销商逾期数据(查询)
+	 * @param time
+	 * @param pageNum
+	 * @param pageSize
+	 * @return
+	 */
+	public PageVo selectBranchOverdueData(String time,String pageNum,String pageSize);
+
+	/**
+	 * 经销商逾期数据(导出)
+	 * @param time
+	 * @return
+	 */
+	public String exportBranchOverdueData(String time);
 }
